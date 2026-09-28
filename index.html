@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration & Result Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Registration & Result Portal</h1>
+        <p>Student Registration and Examination Result System</p>
+    </header>
+
+    <nav>
+        <a href="#registration">Registration</a>
+        <a href="#result">Result</a>
+    </nav>
+
+    <main>
+
+        <!-- Registration Form -->
+        <section class="card" id="registration">
+            <h2>Student Registration</h2>
+
+            <form>
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <label for="name">Student Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            pattern="[A-Za-z ]+"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="roll">Register Number</label>
+                        <input
+                            type="text"
+                            id="roll"
+                            name="roll"
+                            placeholder="Enter register number"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter email"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="10 digit phone number"
+                            pattern="[0-9]{10}"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input
+                            type="date"
+                            id="dob"
+                            name="dob"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course">Select Course</label>
+                        <select id="course" name="course" required>
+                            <option value="">-- Select Course --</option>
+                            <option value="CSE">Computer Science Engineering</option>
+                            <option value="IT">Information Technology</option>
+                            <option value="ECE">Electronics and Communication</option>
+                            <option value="EEE">Electrical and Electronics</option>
+                            <option value="MECH">Mechanical Engineering</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <h2 class="sub-heading">Enter Examination Marks</h2>
+
+                <div class="marks-grid">
+
+                    <div class="form-group">
+                        <label for="python">Python</label>
+                        <input
+                            type="number"
+                            id="python"
+                            min="0"
+                            max="100"
+                            placeholder="0 - 100"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dbms">DBMS</label>
+                        <input
+                            type="number"
+                            id="dbms"
+                            min="0"
+                            max="100"
+                            placeholder="0 - 100"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="os">Operating System</label>
+                        <input
+                            type="number"
+                            id="os"
+                            min="0"
+                            max="100"
+                            placeholder="0 - 100"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cn">Computer Networks</label>
+                        <input
+                            type="number"
+                            id="cn"
+                            min="0"
+                            max="100"
+                            placeholder="0 - 100"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="aiml">AI & ML</label>
+                        <input
+                            type="number"
+                            id="aiml"
+                            min="0"
+                            max="100"
+                            placeholder="0 - 100"
+                            required>
+                    </div>
+
+                </div>
+
+                <button type="submit">Register Student</button>
+
+            </form>
+        </section>
+
+
+        <!-- Student Details -->
+        <section class="card" id="result">
+
+            <h2>Student Result</h2>
+
+            <div class="student-info">
+
+                <div>
+                    <strong>Student Name:</strong>
+                    <span>Muththamizh Selvi</span>
+                </div>
+
+                <div>
+                    <strong>Register Number:</strong>
+                    <span>24CSE001</span>
+                </div>
+
+                <div>
+                    <strong>Course:</strong>
+                    <span>Computer Science Engineering</span>
+                </div>
+
+                <div>
+                    <strong>Email:</strong>
+                    <span>student@example.com</span>
+                </div>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Subject</th>
+                            <th>Marks</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Python</td>
+                            <td>85</td>
+                            <td class="pass">PASS</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>DBMS</td>
+                            <td>78</td>
+                            <td class="pass">PASS</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Operating System</td>
+                            <td>82</td>
+                            <td class="pass">PASS</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Computer Networks</td>
+                            <td>75</td>
+                            <td class="pass">PASS</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>AI & ML</td>
+                            <td>88</td>
+                            <td class="pass">PASS</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <div class="result-box">
+
+                <div>
+                    <h3>Total Marks</h3>
+                    <p>408 / 500</p>
+                </div>
+
+                <div>
+                    <h3>Percentage</h3>
+                    <p>81.6%</p>
+                </div>
+
+                <div>
+                    <h3>Overall Result</h3>
+                    <p class="pass-text">PASS</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Student Registration & Result Portal</p>
+    </footer>
+
+</body>
+</html>
